@@ -12,8 +12,8 @@
     <!-- FontAwesome -->
     <script src="https://kit.fontawesome.com/cfcc17eee9.js" crossorigin="anonymous"></script>
 
-    <title>CPCS | Full Stack</title>
-
+    <title>PC | Full Stack</title>
+    <link rel="shortcut icon" type="image/jpg" href="assets/logo.png"/>
 
   </head>
   <body  data-bs-target="#navbar" data-bs-spy="scroll" >
@@ -22,13 +22,12 @@
     <!-- NavBar -->
     <nav id="navbar" class="navbar navbar-expand-lg fixed-top">
       <div class="container">
-
-        <a class="navbar-brand" href="#">Navbar</a>
-
+        <a class="navbar-brand" href="#">
+          <img src="assets/logo.png" style="max-width: 50px;">
+        </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" style="background-color: white;">
           <i class="fas fa-bars "></i>
         </button>
-
         <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
           <ul class="nav nav-pills nav-header">
             <li class="nav-item">
@@ -38,15 +37,14 @@
               <a class="nav-link" href="#portfolio">Portfolio</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#contact">Hobbies</a>
+              <a class="nav-link" href="#hobbies">Hobbies</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#hobbies">Contact</a>
+              <a class="nav-link" href="#contact">Contact</a>
             </li>
           </ul>
         </div>
       </div>
-   
     </nav>
 
     <!-- Home -->
@@ -66,23 +64,9 @@
         <div class="about-row">
           <div class="about-column">
             <h2>Who am I?</h2>
-            <h2>I'm Joseph Estrada, Web Developer / Engineering Physicst.</h2>
-            <p>
-              I am a Front End developer with experience building websites and web applications. I specialize in JavaScript, and have professional experience working with React.
+            <p style="margin-top: 20px;">
+              I am a full stack developer with 4+ years of experience designing and developing different types of solutions. I professionally specialize in Python and JavaScript, additionally I use Cloud services to deploy my projects and perform data engineering.
             </p>
-
-            <p> 
-              I am always seeking to improve my skills to continually grow professionally to be able to contribute consistently to the workgroup with which I am. 
-            </p>
-            <a
-              class="button--cta"
-              href="./assets/Jose Estrada CV.pdf"
-              download="Jose Estrada CV"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <i class="fas fa-file-download"></i>Download CV
-            </a>
           </div>
           
           <div class="about-column">
@@ -125,19 +109,76 @@
     <section id="portfolio">
       <div class="container">
         <h2 class="section-title">PORTFOLIO</h2>
-        <p>
-          I am a Front End developer with experience building websites and web applications. I specialize in JavaScript, and have professional experience working with React.
-        </p>
+        <div class="portfolio-column">
+
+          <div class="portfolio-container">
+            <div>
+              <img src="assets/port01.png" class="porfolio-image">
+            </div>
+            <div class="portfolio-description">
+              <div class="portfolio-description-content"><h5 style="display: table-cell; vertical-align: middle;">Virtual Laser Shooting Range</h5></div>
+              <div class="portfolio-description-content"><p style="display: table-cell; vertical-align: top;">Unity - OpenCV - Python</p></div>
+              <div class="portfolio-description-links">
+                <div style="width: 100%;">
+                  <div class="portfolio-description-button-container">
+                    <a href="https://youtu.be/6tk3-SDVjpA" class="portfolio-description-buttons"><i class="fab fa-youtube"></i> Youtube</a>
+                  </div>
+                </div>
+              </div>
+            </div>        
+          </div>
+
+          <div class="portfolio-container">
+            <img src="assets/port02.png" class="porfolio-image">
+            <div class="portfolio-description">
+              <div class="portfolio-description-content"><h5 style="display: table-cell; vertical-align: middle;">Telegram Bot</h5></div>
+              <div class="portfolio-description-content"><p style="display: table-cell; vertical-align: top;">Python</p></div>
+              <div class="portfolio-description-links">
+                <div style="width: 100%;">
+                  <div class="portfolio-description-button-container">
+                    <a href="https://youtu.be/Ug6lXqyniPs" class="portfolio-description-buttons"><i class="fab fa-youtube"></i> Youtube</a>
+                  </div>
+                </div>
+                <div style="width: 100%;">
+                  <div class="portfolio-description-button-container">
+                    <a href="https://github.com/pccastros/telegram-bot-python.git" class="portfolio-description-buttons"><i class="fab fa-github" style="color: white;"></i> Repository</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div> 
+         
+        </div>
+
+        <div class="portfolio-text">
+          <h5>You can see all my projects in 
+            <a href="https://www.linkedin.com/in/patricio-castro-61a154168" target="_blank" rel="noopener noreferrer" style="text-decoration: none !important;">Github</a>
+          </h5>
+        </div>
+
       </div>
     </section>
 
     <!-- Hobbies -->
     <section id="hobbies">
       <div class="container">
-        <h2 class="section-title">HOBBIES</h2>
-        <p>
-          I am a Front End developer with experience building websites and web applications. I specialize in JavaScript, and have professional experience working with React.
-        </p>
+        <h2 class="section-title">HOBBIES </h2>
+        <div class="hobbies-column">
+
+          <div class="hobbies-container">
+            <img src="assets/inter01.png" width="100%" style="border-radius: 10px;">
+            <div class="hobbies-name ">TRAVEL</div>
+          </div>
+          <div class="hobbies-container">
+            <img src="assets/inter02.png" width="100%" style="border-radius: 10px;">
+            <div class="hobbies-name ">TREKKING</div>
+          </div>
+          <div class="hobbies-container">
+            <img src="assets/inter03.png" width="100%" style="border-radius: 10px;">
+            <div class="hobbies-name ">TECH & CRYPTO</div>
+          </div>
+          
+        </div>
       </div>
     </section>
 
@@ -148,7 +189,7 @@
         <div class="contact-row">
           
           <div class="contact-column">
-            <a href="mailto:pc.castros@hotmail.com" target="_blank" rel="noopener noreferrer">
+            <a href="mailto:pc.castros@hotmail.com" target="_blank" rel="noopener noreferrer" style="text-decoration: none !important;">
               <div class="contact-item">
                 <i class="far fa-envelope" style="font-size: -webkit-xxx-large;"></i>
                 <p class="contact-link">Mail Me</p>
@@ -157,7 +198,7 @@
           </div>
 
           <div class="contact-column">
-            <a href="https://github.com/pccastros" target="_blank" rel="noopener noreferrer">
+            <a href="https://github.com/pccastros" target="_blank" rel="noopener noreferrer" style="text-decoration: none !important;">
               <div class="contact-item">
                 <i class="fab fa-github" style="font-size: -webkit-xxx-large;"></i>
                 <p class="contact-link">Follow Me</p>
@@ -166,7 +207,7 @@
           </div>
 
           <div class="contact-column">
-            <a href="https://www.linkedin.com/in/patricio-castro-61a154168" target="_blank" rel="noopener noreferrer" >
+            <a href="https://www.linkedin.com/in/patricio-castro-61a154168" target="_blank" rel="noopener noreferrer" style="text-decoration: none !important;">
               <div class="contact-item">
                 <i class="fab fa-linkedin" style="font-size: -webkit-xxx-large;"></i>
                 <p class="contact-link">Contact Me</p>
