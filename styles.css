@@ -1,7 +1,8 @@
 
 .navbar {
   position: fixed;
-  background: transparent;
+  /*background: transparent;*/
+  background:rgba(0,0,0,0.9);
   display: flex;
   justify-content: space-between;
   height: 60px;
@@ -51,7 +52,6 @@ section {
   padding: 0 20px;
 }
 
-
 .background-img {
   background-color: black;
   background-image: url(./assets/background.jpg);
@@ -86,7 +86,7 @@ section {
   color: blue;
 }
 
-/* ABOUT */
+/* --- ABOUT --- */
 .about-row {
   display: flex;
   flex-direction: row;
@@ -96,6 +96,10 @@ section {
 
 .about-column {
   flex: 50%;
+}
+
+.about-description{
+  margin-top: 20px;
 }
 
 .about-column-skills {
@@ -143,7 +147,7 @@ section {
   color:#f44d27
 }
 
-/* PORTFOLIO */
+/* --- PORTFOLIO --- */
 .portfolio-column {
   flex: 50%;
   display: grid;
@@ -230,7 +234,7 @@ section {
   margin-top: 25px;
 }
 
-/* HOBBIES */
+/* --- HOBBIES --- */
 .hobbies-column {
   flex: 50%;
   display: grid;
@@ -260,8 +264,7 @@ section {
 }
 
 
-
-/* CONTACT */
+/* --- CONTACT --- */
 .contact-row {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -306,20 +309,24 @@ section {
 
 @media (max-width: 991px) {
   
+  section{
+    padding: 60px 0;
+  }
+
+  .subsection-title{
+    margin-top: 30px;
+  }
+
   .nav-header{
-    position: absolute;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(0,0,0,0.9);
+    margin: 0;
     width: 100vw;
     height: 100vh;
-    flex-direction: column;
-    text-align: center;
-    background-color: rgba(0,0,0,0.9);
-    top: 0;
+    position: absolute;
     left: 0;
-    padding-top: 25px;
-    font-size: 20px;
-    transform: translateX(100%);
-    opacity: 0;
-    transition: all 0.5s;
+    text-align: center;
   }
   
   .visible {
@@ -329,13 +336,48 @@ section {
     transition: all 0.5s;
   }
 
+  .about-description{
+    margin-top: 0;
+    margin-bottom: 30px;
+    font-size: 24px;
+  }
+
   .about-row {
     flex-direction: column;
   }
-
+  
+  .skill-container{
+    padding: 10px 20px;
+    height: 150px;
+  }
   .about-column-skills{
     grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));;}
   
+  .portfolio-column {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .hobbies-column {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .hobbies-container {
+    padding: 10px 5px;
+  }
+
+  .contact-row {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .contact-column{
+    padding: 10px 5px;
+    gap: 10px
+  }
+}
+
+
+@media (max-width: 640px) {
+
   .portfolio-column {
     grid-template-columns: 1fr;
   }
@@ -344,7 +386,5 @@ section {
     grid-template-columns: 1fr;
   }
 
-  .contact-row {
-    grid-template-columns: 1fr 1fr;
-  }
+
 }
