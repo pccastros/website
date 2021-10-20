@@ -3,7 +3,8 @@ const navbar = document.querySelector("#navbar");
 const menu = document.getElementById('navbarSupportedContent');
 const links = document.querySelectorAll(".nav-link");
 const header = document.querySelector(".nav-header");
-
+console.log(menu)
+console.log(menu.classList)
 // to top when refresh
 window.onbeforeunload = function () {
   if(window.scrollTo) window.scrollTo(0,0);
